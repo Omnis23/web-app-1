@@ -1,1 +1,1 @@
-# Sample app - need to commit something up
+# Getting started on a side project
