@@ -2,12 +2,36 @@
 
 <!--title area-->
 {% block head %}
-<h1>Testing</h1>
+<!-- <h1>Testing</h1> -->
 {% endblock %}
 
 <!--body of page-->
 {% block body %}
 <div>
-    <p>just happy to be here</p>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <!-- Video snippets are not my own, I only compiled them into a short background video -->
+            <!-- Will make sure to give credit to each videographer -->
+            <source src="{{ url_for('static', filename='bgvideo1.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="overlay"></div>
+        
+        <div class="text-overlay">
+            <h1>Serving America’s Farmers for Generations</h1>
+            <p>See farming differently with new ideas.<br>We can help!</p>
+        </div>
+    </div>
+
+    <div class="center">
+        <h1>Helping You Farm For the Future</h1>
+        <p>Naylor Seed Company (NSC) is a family-owned, 
+            retail and wholesale seed distributor based in Scotch Grove, Iowa. 
+            We utilize Science, seed specialists, and year-long crop planning to 
+            ensure your fields work for you. Our experience is worth nearly a 
+            century to ensure you bumper crops and huge profits.</p>
+    </div>
+
 </div>
 {% endblock %}

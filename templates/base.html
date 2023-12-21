@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="style" href="style.css">
-    <title>Omnis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>WebApp1</title>
     {% block head %}{% endblock %}
 </head>
-    {% block body %}{% endblock %}
+    <body>
+        <nav>
+            <img src="{{ url_for('static', filename='NaylorSeedCompany-RGB-200px-2-Cropped.jpg') }}">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Find a Dealer</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Climate Fieldview</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Articles</a></li>
+                <!-- Add more navigation items as needed -->
+            </ul>
+        </nav>
+        {% block body %}{% endblock %}
+    </body>
 </html>

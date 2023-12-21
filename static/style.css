@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+}
+
+nav {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ef5e2a;;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.video-container {
+    position: relative;
+    height: calc(100vh - 40px);
+    min-height: 300px;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.30);
+    z-index: 2;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+    text-shadow: 2px 2px 8px #000000;
+    /* background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(); */
+    /* padding: 1.5em; */
+}
+
+.text-overlay h1 {
+    /* font-size: 2.5em; */
+    margin: 0;
+}
+
+.text-overlay p {
+    font-size: 2em;
+    z-index: 3;
+}
+
+.center {
+    margin: auto;
+    /* width: 50%; */
+    /* transform: translate(-50%, -50%); */
+    padding: 10px;
+
+    h1 {
+        color: #293170;
+        font-family: "Montserrat",sans-serif;
+        font-weight: 700;
+    }
+}
+
+/* Make website mobile friendly */
+@media (max-width: 600px) {
+    .homepage-h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .homepage-h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
